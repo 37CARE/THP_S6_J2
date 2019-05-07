@@ -1,0 +1,19 @@
+<div class="jumbotron bg-secondary">
+	<div class="mx-auto" style="width: 400px;">
+		<h1>Event <%= @event.title %></h1>
+	</div>
+</div>
+
+
+
+<p>Description : <%= @event.description %></p>
+<p>Prix : <%= @event.price %></p>
+<p>Participants : <%= @event.attendances.count %></p>
+<p>Admin : <%= @event.administrator.email %></p>
+<p>Date : <%= @event.start_date %></p>
+<p>Date de fin: <%= @event_end %></p>
+<p>Localisation: <%= @event.location %></p>
+
+
+
+

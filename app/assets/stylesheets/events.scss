@@ -1,0 +1,39 @@
+// Place all the styles related to the events controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.text-light a:hover {
+  color: #F0FFFF;
+  margin: 0 0.4em;
+  text-decoration: underline;
+  font-color: #F0FFFF;
+}
+
+a:link {
+  color: #F0FFFF;
+  margin: 0 0.4em;
+  text-decoration: none;
+  font-color: #F0FFFF;
+}
+
+a:visited {
+  color: #F0FFFF;
+  margin: 0 0.4em;
+  text-decoration: none !important;
+  font-color: #F0FFFF;
+}
+
+
+
+a:hover {
+  color: #F0FFFF !important;
+  text-shadow: 2px 2px 3px #777;
+  text-decoration: none;
+}
+
+.jumbotron {
+  color: #F0FFFF !important;
+  text-shadow: 2px 2px 3px #777;
+  text-decoration: none !important;
+}
