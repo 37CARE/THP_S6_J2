@@ -4,14 +4,14 @@ Rails.application.configure do
   ActionMailer::Base.smtp_settings = {
   :user_name => ENV['SENDGRID_LOGIN'],
   :password => ENV['SENDGRID_PWD'],
-  :domain => 'event-brite-grenoble.fr',
+  :domain => 'envent-b.fr',
   :address => 'smtp.sendgrid.net',
   :port => 587,
   :authentication => :plain,
   :enable_starttls_auto => true
   }
 
-  config.action_mailer.default_url_options = { :host => 'event-brite-grenoble.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'https://event-b.herokuapp.com' }
 
   # Settings specified here will take precedence over those in config/application.rb.
 
