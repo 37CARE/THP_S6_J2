@@ -1,6 +1,6 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.action_mailer.default_url_options = { :host => 'even-thp-toulouse.herokuapp.com' }
+  config.action_mailer.default_url_options = { :host => 'event-b.herokuapp.com' }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
@@ -93,3 +93,15 @@ Rails.application.configure do
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
 end
+
+Rails.application.initialize!
+
+ActionMailer::Base.smtp_settings = {
+  :user_name => ENV['SENDGRID_LOGIN'],
+  :password => ENV['SENDGRID_PWD'],
+  :domain => 'monsite.fr',
+  :address => 'smtp.sendgrid.net',
+  :port => 587,
+  :authentication => :plain,
+  :enable_starttls_auto => true
+}

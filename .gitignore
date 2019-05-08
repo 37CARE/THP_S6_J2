@@ -6,6 +6,9 @@
 
 # Ignore bundler config.
 
+/vendor/bundle/
+/vendor/ruby/
+
 
 /.bundle
 
